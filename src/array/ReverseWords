@@ -1,0 +1,22 @@
+class Solution {
+    public String reverseWords(String s) {
+        String res = "";
+        String[] words = s.split(" ");
+//遍历每个单词
+        for (String word : words
+        ) {
+            res+=reverse(word)+" ";
+        }
+//去掉最后一个空格
+        String trim = res.trim();
+        return trim;
+    }
+//反转字符串
+    public String reverse(String word) {
+        String res = "";
+        for (int i = word.length() - 1; i >= 0; i--) {
+            res += word.charAt(i);
+        }
+        return res;
+    }
+}
