@@ -6,6 +6,8 @@
  *     ListNode(int x) { val = x; }
  * }
  */
+//执行用时 :2 ms, 在所有 Java 提交中击败了97.89%的用户
+//内存消耗 :34.8 MB, 在所有 Java 提交中击败了95.60%的用户
 class Solution {
     public ListNode rotateRight(ListNode head, int k) {
         if(head == null || k <=0) return head;
